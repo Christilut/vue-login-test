@@ -44,7 +44,6 @@ export default {
 <style lang="scss" scoped>
 .container {
   display: flex;
-  height: calc(100% - 70px);
   justify-content: center;
 
   .row {
