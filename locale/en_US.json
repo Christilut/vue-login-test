@@ -1,6 +1,16 @@
 {
-  "message": {
-    "hello": "Hello",
-    "world": "World"
+  "generic": {
+    "or": "or",
+    "google": "Google",
+    "facebook": "Facebook"
+  },
+  "login": {
+      "please_login": "Please Log In, or",
+      "link_signup": "Sign Up",
+      "username_email": "Username or email",
+      "forgot_password": "Forgot password?",
+      "password": "Password",
+      "remember_me": "Remember me",
+      "login": "Log In"
   }
 }

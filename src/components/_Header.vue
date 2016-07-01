@@ -1,36 +1,52 @@
-<template lang="jade">
-header
-  dropdown
-    button.btn.btn-sm.btn-default(type='button', data-toggle='dropdown')
-      | Nederlands
-      span.caret
-    ul.dropdown-menu(slot='dropdown-menu')
-      li
-        a test
-      li
-        a ablasef
-
+<template lang='html'>
+  <header>
+    <div class='form-group'>
+      <select class='form-control' v-on:change='changeLanguage'>
+        <option v-for='language in languages' value='{{language.value}}'>{{language.text}}</option>
+      </select>
+    </div>
+  </header>
 </template>
 
 <script>
-import dropdown from 'vue-strap'
-export default {
-  components: {
-    dropdown
+  export default {
+    methods: {
+      changeLanguage: function(event) {
+        Vue.config.lang = event.target.value
+      }
+    },
+    components: {
+
+    },
+    data() {
+      return {
+        languages: [{
+          text: 'English (US)',
+          value: 'en_US',
+        }, {
+          text: 'Nederlands',
+          value: 'nl_NL',
+        }]
+      }
+    }
   }
-}
 </script>
 
-<style lang="scss" scoped>
-header {
-  border-bottom: 1px solid grey;
-  background: #eee;
-  height: 55px;
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-}
-.caret {
-  margin-left: 10px;
-}
+<style lang='scss' scoped>
+  header {
+    border-bottom: 1px solid grey;
+    background: #eee;
+    display: flex;
+    justify-content: flex-end;;
+    padding: 10px;
+
+    .form-group {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      align-self: center;
+      margin: 0;
+    }
+  }
 </style>

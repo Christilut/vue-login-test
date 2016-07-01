@@ -13,13 +13,13 @@
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
-    "i18next": "^3.3.1",
     "jquery": "^3.0.0",
     "node-sass": "^3.8.0",
     "sass-loader": "^4.0.0",
     "vue": "^1.0.21",
+    "vue-i18n": "^4.0.1",
     "vue-router": "^0.7.13",
-    "vue-strap": "^1.0.11"
+    "vuestrap-base-components": "^0.8.10"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

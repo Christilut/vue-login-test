@@ -26,10 +26,11 @@ module.exports = {
     fallback: [path.join(__dirname, '../node_modules')]
   },
   plugins: [
-  //   new webpack.ProvidePlugin({
-  //    $: "jquery",
-  //    jQuery: "jquery"
-  //  })
+    new webpack.ProvidePlugin({
+        'Vue': 'vue'
+    //  $: "jquery",
+    //  jQuery: "jquery"
+   })
  ],
   module: {
     // preLoaders: [

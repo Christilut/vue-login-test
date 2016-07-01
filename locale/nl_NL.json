@@ -1,0 +1,16 @@
+{
+  "generic": {
+    "or": "of",
+    "google": "Google",
+    "facebook": "Facebook"
+  },
+  "login": {
+      "please_login": "Log in, of",
+      "link_signup": "maak account",
+      "username_email": "Gebruikersnaam of email",
+      "forgot_password": "Wachtwoord vergeten?",
+      "password": "Wachtwoord",
+      "remember_me": "Blijf ingelogd",
+      "login": "Log In"
+  }
+}
